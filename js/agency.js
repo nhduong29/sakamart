@@ -1,26 +1,41 @@
-/*!
- * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+var overlay;
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
+function initialize() {
+    var myLatLng = new google.maps.LatLng(62.323907, -150.109291);
+    var mapOptions = {
+        zoom: 11,
+        center: myLatLng
+    };
 
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
-})
+    var gmap = new google.maps.Map(document.getElementById('map-saka'), mapOptions);
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
-});
+    function HTMLMarker(lat,lng){
+        this.lat = lat;
+        this.lng = lng;
+        this.pos = new google.maps.LatLng(lat,lng);
+    }
+
+    HTMLMarker.prototype = new google.maps.OverlayView();
+    HTMLMarker.prototype.onRemove= function(){}
+
+    //init your html element here
+    HTMLMarker.prototype.onAdd= function(){
+        div = document.createElement('DIV');
+        div.className = "htmlMarker";
+        div.innerHTML = '<img src="http://nhduong29.github.io/nhduongProject1/img/WhereTo-Logo-small.png" alt="Mountain View" style="width:30px;height:22px">'+21;
+        var panes = this.getPanes();
+        panes.overlayImage.appendChild(div);
+    }
+
+    HTMLMarker.prototype.draw = function(){
+        var overlayProjection = this.getProjection();
+        var position = overlayProjection.fromLatLngToDivPixel(this.pos);
+        var panes = this.getPanes();
+        panes.overlayImage.style.left = position.x + 'px';
+        panes.overlayImage.style.top = position.y - 30 + 'px';
+    }
+
+    //to use it
+    var htmlMarker = new HTMLMarker(62.323907, -150.109291);
+    htmlMarker.setMap(gmap);
+}

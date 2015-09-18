@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="QIPPage">
+<html lang="en">
 
 <head>
 
@@ -37,7 +37,7 @@
 
 </head>
 
-<body id="page-top" class="index" ng-controller="QIPCtrl">
+<body id="page-top" class="index" onload="initialize()">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -226,11 +226,16 @@
     </section>
 
     <section id="map" class="bg-light-gray">
-    <div class="container-fluid">
+   <!-- <div class="container-fluid">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3919.565906867404!2d106.69121500000001!3d10.7679!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3d8081d9c9%3A0xa365baed94673acd!2sLa+Felix+Hotel!5e0!3m2!1sen!2s!4v1428739336076" frameborder="0"></iframe>
                 </div>
-    </div>
+    </div>-->
+        <div class="container-fluid">
+            <div id="map-saka">
+
+            </div>
+        </div>
     </section>
 
 
@@ -285,8 +290,12 @@
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
 
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+
 
 
 </body>
