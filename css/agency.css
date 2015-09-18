@@ -24,12 +24,6 @@ p {
     line-height: 1.75;
     font-family: 'Roboto', sans-serif;
 }
-p>i{
-    font-size: 14px;
-    color: #00DFFC;
-    background: #343838;
-    padding: 4px;
-}
 
 p.large {
     font-size: 16px;
@@ -1066,9 +1060,29 @@ body{
 #philosophy{
     background: #89bc40;
 }
-.vertyas-txt{
+#vertyas{
     background: #ff9000;
 }
 .vertyas-bg{
     background: url("../img/img1.jpg");
+}
+
+.photo-col{
+    padding: 100px 0px;
+}
+
+.event-col{
+    padding: 50px 0px;
+    border: 1px solid #777777;
+}
+.margin-top-bottom{
+    padding: 20px;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.row{
+    padding: 15px;
 }
