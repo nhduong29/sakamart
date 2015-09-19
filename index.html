@@ -24,9 +24,6 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,7 +37,7 @@
 <body id="page-top" class="index" onload="initialize()">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -54,57 +51,157 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav ">
+                <ul class="nav navbar-nav">
                     <li class="hidden">
                         <a href="#page-top"></a>
-                    </li>
+                    </li><!--
                     <li>
-                        <a class="page-scroll" href="#about-me">Sạch hơn Ngon hơn</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#run">SakyMart</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">HOTLINE: +84-08 6679 7250</a>
-                    </li>
+                        <a class="page-scroll" href="">Sach hon Ngon hon</a>
+                    </li>-->
+                    <li class="nav-img logo-navbar-left"><a href="#"><img id="logo-navbar-left" src="img/sachhon-ngonhon.png" width="200"></a></li>
+                    <li class="nav-img logo-navbar-middle"><a href="#"><img id="logo-navbar-middle" src="img/logo.png" width="200"></a></li>
+                    <li class="nav-img logo-navbar-right"><a href="#"><img id="logo-navbar-right" src="img/hotline.png" width="200"></a></li>
+                    <!--<li>
+                        <a class="page-scroll" href="">HOTLINE: <span class="color-org">+84-08 6679 7250</span></a>
+                    </li>-->
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+            </div><!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading">
 
+
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <div class="square"></div>
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/page-1_slide1.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/page-1_slide2.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/page-1_slide3.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
                 </div>
             </div>
         </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+        <div class="square2"></div>
     </header>
 
-    <section id="philosophy" class="bg-light-gray">
-        <div class="container-fluid">
+    <div id="register" class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 register-form">
+                <h1 class="text-center">REGISTER CODE</h1>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" id="full-name" placeholder="Full name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+                                <input type="text" class="form-control" id="guest" placeholder="# of Guests">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-6 bottom-margin">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                <input type="password" class="form-control" id="date" placeholder="Date">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                <input type="password" class="form-control" id="time" placeholder="Time">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-3">
+                            <button type="submit" class="btn regist-btn">ĐĂNG KÝ NGAY</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section id="sale" class="bg-light-gray">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h1>Our philosophy</h1>
+                <div class="col-sm-12 text-center header-row">
+                    <h1>Please register get code of sale 10%</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 text-center">
-                    <i class="fa fa-diamond"></i>
-                    <h3>HERAS DEOREAS FRTAETALE RESRERTAS ERTA MIO</h3>
+                <div class="col-sm-12 text-center">
+                    <p>Beciegast nveriti vitaesaert asety kertya aset aplicaboserde nerorem miuyas keryas asipsumod itaut.
+                        Monsequntur magni dolores eonqui ratione voluptate msequise kertyias nesciunt, neque porro quisquam serinuyfasas.
+                        Vertyu erauas aitaesa ertyasneo eniptaiades delortyas miaseolernatur aut oditaut.
+                        Donsequuntur magni dolores eo qui ratione voluptate.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="philosophy" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center header-row">
+                    <h2><span>Our philosophy</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center philosophy-block">
+                    <div class="circle-number">01</div>
+                    <h4>HERAS DEOREAS FRTAETALE <br>RESRERTAS ERTA MIO</h4>
                     <p>Astyus scrat styseya sertaskeras oriosam, nisieas aliqaset aplicabab. Duis autem cea commodi coquses easasvel eum muyt.</p>
                 </div>
-                <div class="col-md-4 text-center">
-                    <i class="fa fa-diamond"></i>
-                    <h3>VERTYAS MISAS REASETALE MISEAS LESRERTA</h3>
+                <div class="col-md-4 text-center philosophy-block">
+                    <div class="circle-number">02</div>
+                    <h4>VERTYAS MISAS REASETALE <br>MISEAS LESRERTA</h4>
                     <p>Nertaskes ertyus scrat setysertya aset aplicababoriosam, nisieas aliqui cea commodi coqus. Duis autem vel eum muyteasas.</p>
                 </div>
-                <div class="col-md-4 text-center">
-                    <i class="fa fa-diamond"></i>
-                    <h3>REASETALE VERTYAS DOLOER KERYRASE SERUYAS</h3>
+                <div class="col-md-4 text-center philosophy-block">
+                    <div class="circle-number">03</div>
+                    <h4>REASETALE VERTYAS DOLOER <br>KERYRASE SERUYAS</h4>
                     <p>Beytaskes ertyus scrat setysertya aset aplicababoriosam, nisieas aliqui cea commodi coqus. Duis autem vel eum muyteasas.</p>
                 </div>
             </div>
@@ -114,14 +211,13 @@
     <section id="vertyas" class="bg-light-gray">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-2 col-md-offset-2 text-left vertyas-txt">
-                    <i class="fa fa-diamond"></i>
-                    <h3>VERTYAS MISAS REASETALE MISEAS LESRERTA</h3>
-                    <p>Beytaskes ertyus scrat setysertya aset aplicababoriosam,
-                        nisieas aliqui cea commodi coqus. Duis autem vel eum
-                        muyteasasiure reprehe nderit, qui in ea voluptate.</p>
-                </div>
-                <div class="col-md-6 text-center vertyas-bg">
+                <div class="col-md-6">
+                    <h2><span>perfect</span><br>experience &amp; high <br>quality services</h2>
+                    <p>Beytaskes ertyus scrat setysertya
+                        aset aplicababoriosam, nisieas aliqui
+                        cea commodi coqus. Duis autem
+                        vel eum muyteasasiure reprehe
+                        nderit, qui in ea voluptate.</p>
                 </div>
             </div>
         </div>
@@ -130,78 +226,88 @@
     <section id="photo" class="bg-light-gray">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h1>Photo gallery</h1>
+                <div class="col-sm-12 text-center header-row">
+                    <h2><span>Photo gallery</span></h2>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-4 photo-col photo-col-1">
-                    <h3>CAPTIONS 1</h3>
-                    <p>Something Something Something Something</p>
+                    <div class="photo-hover">
+                        <h3>CAPTIONS</h3>
+                        <p>Something Something Something Something</p>
+                    </div>
                 </div>
                 <div class="col-md-4 photo-col photo-col-2">
-                    <h3>CAPTIONS 2</h3>
-                    <p>Something Something Something Something</p>
+                    <div class="photo-hover">
+                        <h3>CAPTIONS</h3>
+                        <p>Something Something Something Something</p>
+                    </div>
                 </div>
                 <div class="col-md-4 photo-col photo-col-3">
-                    <h3>CAPTIONS 3</h3>
-                    <p>Something Something Something Something</p>
+                    <div class="photo-hover">
+                        <h3>CAPTIONS</h3>
+                        <p>Something Something Something Something</p>
+                    </div>
                 </div>
                 <div class="col-md-4 photo-col photo-col-4">
-                    <h3>CAPTIONS 4</h3>
-                    <p>Something Something Something Something</p>
+                    <div class="photo-hover">
+                        <h3>CAPTIONS</h3>
+                        <p>Something Something Something Something</p>
+                    </div>
                 </div>
                 <div class="col-md-4 photo-col photo-col-5">
-                    <h3>CAPTIONS 5</h3>
-                    <p>Something Something Something Something</p>
+                    <div class="photo-hover">
+                        <h3>CAPTIONS</h3>
+                        <p>Something Something Something Something</p>
+                    </div>
                 </div>
                 <div class="col-md-4 photo-col photo-col-6">
-                    <h3>CAPTIONS 6</h3>
-                    <p>Something Something Something Something</p>
+                    <div class="photo-hover">
+                        <h3>CAPTIONS</h3>
+                        <p>Something Something Something Something</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="event" class="bg-light-gray">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h1>News and Events</h1>
+                <div class="col-sm-12 text-center header-row">
+                    <h2><span>News and Events</span></h2>
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="col-md-4 event-col">
-                        <h3>10DECEMBER 2015</h3>
-                        <p>TEXT TEXT TEXT TEXT TEXT</p>
-                    </div>
-                    <div class="col-md-4 event-col">
-                        <h3>13 DECEMBER 2015</h3>
-                        <p>TEXT TEXT TEXT TEXT TEXT</p>
-                    </div>
-                    <div class="col-md-4 event-col">
-                        <h3>18 DECEMBER 2015</h3>
-                        <p>TEXT TEXT TEXT TEXT TEXT</p>
-                    </div>
+                <div class="col-md-4 event-col">
+                    <h3>10DECEMBER 2015</h3>
+                    <p class="text-gray">FEYTASERAS RASTYA NERTASKES ERTYUS NUERTSEYAS SABOR.</p>
+                </div>
+                <div class="col-md-4 event-col">
+                    <h3>13 DECEMBER 2015</h3>
+                    <p class="text-gray">NERTASKES ERTYUS SCRAT SETYSERTYA DOLOERTAS MIUGAS.</p>
+                </div>
+                <div class="col-md-4 event-col">
+                    <h3>18 DECEMBER 2015</h3>
+                    <p class="text-gray">US SCRAT SETYSERTYA NERTASKES ERTY   ABORUYASET APLICAB.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="dish" class="bg-light-gray">
-        <div class="container-fluid">
+    <section id="dish" class="bg-midlight-gray">
+        <div class="container">
             <div class="row text-center">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="col-md-8 text-left">
-                        <h1>DISH OF THE DAY</h1>
-                        <h2>SPECIALTIES LIKE GRIULESS SALMON STEK</h2>
-                        <p>TEXT TEXT TEXT TEXT TEXT</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>13 DECEMBER 2015</h3>
-                        <p>TEXT TEXT TEXT TEXT TEXT</p>
-                    </div>
+                <div class="col-md-8 text-left">
+                    <h2><span class="text-green">DISH OF THE DAY</span></h2>
+                    <h3 class="text-gray">SPECIALTIES LIKE GRIULESS SALMON STEK</span></h3>
+                    <p class="text-gray">Neyurasas kuytrasar siteruer adipiscing el auris ferment fereas laoreet aliquam leo.
+                        Ut tellus dolorapibus eget, elementum velcurus eleifend, elit. Aenean auctor wist urnaluam erat volutpat.
+                        Duis ac turpis. Integer rutrum ante eu lacus.
+                        Quisque nulla.</p>
+                </div>
+                <div class="col-md-4 dish-img">
+                    <img src="img/dish.jpg" class="img-circle img-responsive" width="450" height="450">
                 </div>
             </div>
         </div>
@@ -213,12 +319,12 @@
                 <div class="col-md-8 col-md-offset-2">
                     <span>28 Jakson Blvd Ste 1020 Chicago</span></br>
                     <span>IL 60604-2340</span>
-                    <p class="margin-top-bottom">
-                        <i class="fa fa-2x fa-facebook-official"></i>
-                        <i class="fa fa-2x fa-twitter"></i>
-                        <i class="fa fa-2x fa-google-plus"></i>
-                        <i class="fa fa-2x fa-pinterest"></i>
-                    </p>
+                    <div class="margin-top-bottom">
+                        <a href="" class="btn btn-default btn-circle"><i class="fa fa-2x fa-facebook-f"></i></a>
+                        <a href="" class="btn btn-default btn-circle"><i class="fa fa-2x fa-twitter"></i></a>
+                        <a href="" class="btn btn-default btn-circle"><i class="fa fa-2x fa-google-plus"></i></a>
+                        <a href="" class="btn btn-default btn-circle"><i class="fa fa-2x fa-pinterest"></i></a>
+                    </div>
                     <span>@2015 | All Right Reserved</span>
                 </div>
             </div>
@@ -226,11 +332,7 @@
     </section>
 
     <section id="map" class="bg-light-gray">
-   <!-- <div class="container-fluid">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3919.565906867404!2d106.69121500000001!3d10.7679!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3d8081d9c9%3A0xa365baed94673acd!2sLa+Felix+Hotel!5e0!3m2!1sen!2s!4v1428739336076" frameborder="0"></iframe>
-                </div>
-    </div>-->
+        <div class="square"></div>
         <div class="container-fluid">
             <div id="map-saka">
 
@@ -238,31 +340,6 @@
         </div>
     </section>
 
-
-    <footer class="bg-midlight-gray">
-        <div class="container footer-block">
-            <div class="row">
-                <!--<div class="col-sm-12">
-                    <span class="copyright">Copyright &copy; DUONG NGUYEN 2015</span>
-                </div>
-                <div class="col-sm-12">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>-->
-                <div class="col-sm-12 text-right">
-                    <span class="icon-social"><i class="fa fa-heart"></i></span>
-                    <span class="icon-social"><i class="fa fa-facebook-square"></i></span>
-                    <span class="icon-social"><i class="fa fa-linkedin-square"></i></span>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Portfolio Modals -->
 
 
     <!-- jQuery -->
@@ -281,7 +358,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
         $().ready(function(){
-            $('[rel="tooltip"]').tooltip();
+            $('.carousel').carousel({
+                interval: 2000 //changes the speed
+            })
         });
     </script>
 

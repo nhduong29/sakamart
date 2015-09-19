@@ -1,7 +1,7 @@
 var overlay;
 
 function initialize() {
-    var myLatLng = new google.maps.LatLng(62.323907, -150.109291);
+    var myLatLng = new google.maps.LatLng(10.79684,106.64267);
     var mapOptions = {
         zoom: 11,
         center: myLatLng
@@ -22,7 +22,7 @@ function initialize() {
     HTMLMarker.prototype.onAdd= function(){
         div = document.createElement('DIV');
         div.className = "htmlMarker";
-        div.innerHTML = '<img src="http://nhduong29.github.io/nhduongProject1/img/WhereTo-Logo-small.png" alt="Mountain View" style="width:30px;height:22px">'+21;
+        div.innerHTML = '<img src="http://nhduong29.github.io/nhduongProject1/img/gmap_marker.png" alt="Mountain View" style="width:39px;height:62px">'+'Saky Mart';
         var panes = this.getPanes();
         panes.overlayImage.appendChild(div);
     }
@@ -36,6 +36,6 @@ function initialize() {
     }
 
     //to use it
-    var htmlMarker = new HTMLMarker(62.323907, -150.109291);
+    var htmlMarker = new HTMLMarker(10.79684,106.64267);
     htmlMarker.setMap(gmap);
 }
