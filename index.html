@@ -19,6 +19,11 @@
     <!--animate.css-->
     <link href="css/animate.css" rel="stylesheet">
 
+    <!--datepicker-->
+    <link href="css/datepicker/datepicker.min.css" rel="stylesheet">
+    <link href="css/datepicker/datepicker3.min.css" rel="stylesheet">
+    <link href="css/timepicker.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
 
@@ -140,15 +145,15 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-6 bottom-margin">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                <input type="password" class="form-control" id="date" placeholder="Date">
+                            <div class="input-group input-append date" id="datePickerFrom">
+                                <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                                <input type="text" class="form-control" name="date" placeholder="Date">
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
-                                <input type="password" class="form-control" id="time" placeholder="Time">
+                            <div class="input-group bootstrap-timepicker timepicker">
+                                <span class="input-group-addon"><span class="fa fa-clock-o"></span></span>
+                                <input id="datePickerTo" type="text" class="form-control time-tick" name="date" placeholder="Time">
                             </div>
                         </div>
                     </div>
@@ -368,6 +373,13 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!--datepicker-->
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-timepicker.js"></script>
+
+    <!-- custom datepicker -->
+    <script src="js/datepickerCustom.js"></script>
 
     <!-- Google Maps -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
