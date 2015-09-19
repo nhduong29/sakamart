@@ -22,7 +22,7 @@ function initialize() {
     HTMLMarker.prototype.onAdd= function(){
         div = document.createElement('DIV');
         div.className = "htmlMarker";
-        div.innerHTML = '<img src="http://nhduong29.github.io/nhduongProject1/img/gmap_marker.png" alt="Mountain View" style="width:39px;height:62px">'+'Saky Mart';
+        div.innerHTML = '<img src="../img/gmap_marker.png" alt="Mountain View" style="width:39px;height:62px">'+'Saky Mart';
         var panes = this.getPanes();
         panes.overlayImage.appendChild(div);
     }
