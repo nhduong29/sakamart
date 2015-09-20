@@ -299,6 +299,22 @@ ul li a.logo {
     padding: 0;
     margin-bottom: -20px;
 }
+
+.icon-prev{
+    background: url("../img/prev.png");
+}
+
+.icon-prev:before {
+    content: '' !important;
+}
+
+.icon-next:before {
+    content: '' !important;
+}
+
+.icon-next{
+    background: url("../img/next.png");
+}
 /*
 .photo-col{
     color: #ffffff;
