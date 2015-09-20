@@ -233,6 +233,15 @@ ul li a.logo {
     }
 }
 /*--------------------------*/
+.logo-on-mobile{
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    background: url("../img/logo.png") center no-repeat;
+    z-index: 9999;
+    margin-bottom: 30px;
+}
+
 #philosophy{
     background: #89bc40;
     color: #ffffff;
@@ -258,8 +267,39 @@ ul li a.logo {
         background-size: cover;
     }
 }
+.thumbnail {
+    position:relative;
+    overflow:hidden;
+    height: 280px;
+    background: none;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+}
 
-
+.caption {
+    position:absolute;
+    top:0;
+    right:0;
+    background: rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+    padding: 95px 0px;
+    display: none;
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+    cursor: default;
+}
+.caption h4{
+    text-transform: uppercase;
+    margin-top: 103px;
+}
+#photo .col-md-4{
+    padding: 0;
+    margin-bottom: -20px;
+}
+/*
 .photo-col{
     color: #ffffff;
     position: relative;
@@ -306,6 +346,22 @@ ul li a.logo {
 }
 .photo-col-6{
     background: url("../img/photo6.jpg") no-repeat center center;
+}*/
+
+
+@media (min-width: 992px) {
+    .event-col{
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 1px solid #777777;
+    }
+
+    .no-l-r-boder{
+        border-left: none !important;
+        border-right: none !important;
+    }
 }
 
 .event-col{
@@ -314,6 +370,7 @@ ul li a.logo {
     padding-top: 20px;
     padding-bottom: 20px;
     border: 1px solid #777777;
+    margin-top: 20px;
 }
 .margin-top-bottom{
     padding: 20px;

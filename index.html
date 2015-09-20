@@ -46,12 +46,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                <div class="logo-on-mobile visible-xs-block hidden-desktop"></div>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -91,21 +86,21 @@
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('img/page-1_slide1.jpg');"></div>
+                <div class="fill" style="background-image:url('img/slide1.jpg');" title="Slide 1"></div>
                 <div class="carousel-caption">
                     <h2>Caption 1</h2>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('img/page-1_slide2.jpg');"></div>
+                <div class="fill" style="background-image:url('img/page-1_slide2.jpg');" title="Slide 2"></div>
                 <div class="carousel-caption">
                     <h2>Caption 2</h2>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('img/page-1_slide3.jpg');"></div>
+                <div class="fill" style="background-image:url('img/page-1_slide3.jpg');" title="Slide 3"></div>
                 <div class="carousel-caption">
                     <h2>Caption 3</h2>
                 </div>
@@ -114,7 +109,7 @@
 
         <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
+            <span class="icon-"></span>
         </a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
@@ -233,45 +228,105 @@
                     <h1>Photo gallery</h1>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col-md-4 photo-col photo-col-1">
+            <!--<div class="row text-center">
+                <div class="col-md-4 photo-col photo-col-1" title="Photo 1">
                     <div class="photo-hover">
                         <h3>CAPTIONS</h3>
                         <p>Something Something Something Something</p>
                     </div>
                 </div>
-                <div class="col-md-4 photo-col photo-col-2">
+                <div class="col-md-4 photo-col photo-col-2" title="Photo 2">
                     <div class="photo-hover">
                         <h3>CAPTIONS</h3>
                         <p>Something Something Something Something</p>
                     </div>
                 </div>
-                <div class="col-md-4 photo-col photo-col-3">
+                <div class="col-md-4 photo-col photo-col-3" title="Photo 3">
                     <div class="photo-hover">
                         <h3>CAPTIONS</h3>
                         <p>Something Something Something Something</p>
                     </div>
                 </div>
-                <div class="col-md-4 photo-col photo-col-4">
+                <div class="col-md-4 photo-col photo-col-4" title="Photo 4">
                     <div class="photo-hover">
                         <h3>CAPTIONS</h3>
                         <p>Something Something Something Something</p>
                     </div>
                 </div>
-                <div class="col-md-4 photo-col photo-col-5">
+                <div class="col-md-4 photo-col photo-col-5" title="Photo 5">
                     <div class="photo-hover">
                         <h3>CAPTIONS</h3>
                         <p>Something Something Something Something</p>
                     </div>
                 </div>
-                <div class="col-md-4 photo-col photo-col-6">
+                <div class="col-md-4 photo-col photo-col-6" title="Photo 6">
                     <div class="photo-hover">
                         <h3>CAPTIONS</h3>
                         <p>Something Something Something Something</p>
+                    </div>
+                </div>
+            </div>-->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h4>Thumbnail Headline</h4>
+                            <p>short thumbnail description</p>
+                        </div>
+                        <img src="img/photo1.jpg" class="img-responsive" alt="Photo 1">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h4>Thumbnail Headline</h4>
+                            <p>short thumbnail description</p>
+                        </div>
+                        <img src="img/photo2.jpg" class="img-responsive" alt="Photo 2">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h4>Thumbnail Headline</h4>
+                            <p>short thumbnail description</p>
+                        </div>
+                        <img src="img/photo3.jpg" class="img-responsive" alt="Photo 3">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h4>Thumbnail Headline</h4>
+                            <p>short thumbnail description</p>
+                        </div>
+                        <img src="img/photo4.jpg" class="img-responsive" alt="Photo 4">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h4>Thumbnail Headline</h4>
+                            <p>short thumbnail description</p>
+                        </div>
+                        <img src="img/photo5.jpg" class="img-responsive" alt="5">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h4>Thumbnail Headline</h4>
+                            <p>short thumbnail description</p>
+                        </div>
+                        <img src="img/photo6.jpg" class="img-responsive" alt="6">
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section id="event" class="bg-light-gray">
@@ -286,7 +341,7 @@
                     <h4>10DECEMBER 2015</h4>
                     <p class="text-gray">FEYTASERAS RASTYA NERTASKES ERTYUS NUERTSEYAS SABOR.</p>
                 </div>
-                <div class="col-md-4 event-col wow fadeInUp" data-wow-delay="0.4s">
+                <div class="col-md-4 event-col no-l-r-boder wow fadeInUp" data-wow-delay="0.4s">
                     <h4>13 DECEMBER 2015</h4>
                     <p class="text-gray">NERTASKES ERTYUS SCRAT SETYSERTYA DOLOERTAS MIUGAS.</p>
                 </div>
@@ -303,14 +358,14 @@
             <div class="row text-center">
                 <div class="col-md-8 text-left wow fadeInLeft">
                     <h2><span class="text-green">DISH OF THE DAY</span></h2>
-                    <h4 class="text-gray h4-big">SPECIALTIES LIKE GRIULESS SALMON STEK</span><h4>
+                    <h4 class="text-gray h4-big">SPECIALTIES LIKE GRIULESS SALMON STEK</h4>
                     <p class="text-gray p-padding-right-2 text-justify">Neyurasas kuytrasar siteruer adipiscing el auris ferment fereas laoreet aliquam leo.
                         Ut tellus dolorapibus eget, elementum velcurus eleifend, elit. Aenean auctor wist urnaluam erat volutpat.
                         Duis ac turpis. Integer rutrum ante eu lacus.
                         Quisque nulla.</p>
                 </div>
                 <div class="col-md-4 dish-img wow fadeInRight">
-                    <img src="img/dish.jpg" class="img-circle img-responsive" width="450" height="450">
+                    <img src="img/dish.jpg" class="img-circle img-responsive" width="450" height="450" alt="Dish of the day">
                 </div>
             </div>
         </div>
@@ -362,7 +417,7 @@
     <script type="text/javascript">
         $().ready(function(){
             $('.carousel').carousel({
-                interval: 2000 //changes the speed
+                interval: 5000 //changes the speed
             })
         });
     </script>
@@ -384,7 +439,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
-
+    <script src="js/script.js"></script>
 
 
 </body>
