@@ -21,14 +21,14 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 h1{
-    font-size: 48pt;
+    font-size: 40px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
 }
 
 h2 span{
-    font-size: 70px;
-    font-weight: 700;
+    font-size: 60px;
+    font-weight: 600;
 }
 
 h4{
@@ -40,6 +40,23 @@ h4{
     font-size: 28px;
     font-weight: 600;
 }
+.row{
+    margin:0;
+}
+@media (min-width: 768px) {
+    h1{
+        font-size: 48px;
+        font-weight: 600;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h2 span{
+        font-size: 70px;
+        font-weight: 700;
+    }
+}
+
+
 
 p.large {
     font-size: 16px;
@@ -339,7 +356,13 @@ ul li a.logo {
     padding: 0;
 }
 #map-saka{
-    height: 500px;
+    height: 300px;
+}
+
+@media (min-width: 768px) {
+    #map-saka{
+        height: 500px;
+    }
 }
 
 h2{
