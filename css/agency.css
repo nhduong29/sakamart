@@ -1,8 +1,8 @@
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,500italic,400italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
 body {
     overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     background: #ffffff;
 }
 
@@ -15,14 +15,43 @@ body {
 }
 
 p {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 1.75;
     font-family: 'Roboto', sans-serif;
 }
+h1{
+    font-size: 48pt;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 span{
+    font-size: 70px;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.h4-big{
+    font-size: 28px;
+    font-weight: 600;
+}
 
 p.large {
     font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .p-padding-right{
+        padding-right: 250px;
+    }
+    .p-padding-right-2{
+        padding-right: 350px;
+    }
 }
 
 a,
@@ -215,18 +244,21 @@ ul li a.logo {
     position: relative;
     color: #ffffff;
 }
-#vertyas:before {
-    content: '';
-    background: url("../img/img1.jpg") top right no-repeat;
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    -webkit-background-size: cover;
-    background-size: cover;
+@media (min-width: 768px) {
+    #vertyas:before {
+        content: '';
+        background: url("../img/img1.jpg") top right no-repeat;
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
 }
+
 
 .photo-col{
     color: #ffffff;
@@ -240,7 +272,7 @@ ul li a.logo {
 }
 .photo-hover{
     position: absolute;
-    padding: 100px 0px;
+    padding: 103px 0px;
     top: 0;
     left: 0;
     width: 100%;
@@ -277,7 +309,10 @@ ul li a.logo {
 }
 
 .event-col{
-    padding: 20px 0px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border: 1px solid #777777;
 }
 .margin-top-bottom{
@@ -296,11 +331,6 @@ ul li a.logo {
 }
 #map-saka{
     height: 500px;
-}
-
-h2 span{
-    font-size: 50px;
-    line-height: 50px;
 }
 
 h2{
@@ -335,6 +365,9 @@ section{
     .dish-img img{
         margin-top: -50px;
         border: 10px solid #fbfbfb;
+        -webkit-box-shadow: 0px 10px 10px 0px #dadada;
+        -moz-box-shadow: 0px 10px 10px 0px #dadada;
+        box-shadow: 0px 10px 8px 0px #dadada;
     }
 }
 
@@ -357,14 +390,14 @@ section{
 }
 
 .circle-number{
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
     margin:0 auto;
     background: #ffffff;
     color: #89bc40;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 80px;
+    line-height: 110px;
     font-weight: bold;
     margin-bottom: 25px;
 }
@@ -386,7 +419,7 @@ section{
     background: #ff9000;
     border-radius: 20px;
     color: #ffffff;
-    padding: 20px 40px;
+    padding: 20px 30px;
     z-index: 99999;
 }
 
@@ -480,7 +513,7 @@ body {
 
 .form-control {
     height: 42px;
-    padding: 15px 20px;
+    padding: 15px 10px;
     font-size: 14px;
     line-height: 2;
     color: #89bc40;
@@ -508,6 +541,9 @@ body {
 
 .bottom-margin{
     margin-bottom: 15px;
+}
+.form-group .col-sm-4{
+
 }
 
 @media(min-width:768px) {
