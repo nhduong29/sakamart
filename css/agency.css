@@ -301,7 +301,7 @@ ul li a.logo {
 }
 
 .icon-prev{
-    background: url("../img/prev.png");
+    background: url("../img/prev.png") center;
 }
 
 .icon-prev:before {
@@ -313,7 +313,7 @@ ul li a.logo {
 }
 
 .icon-next{
-    background: url("../img/next.png");
+    background: url("../img/next.png") center;
 }
 /*
 .photo-col{
